@@ -5,8 +5,8 @@ import { getCodeSandboxHost } from "@codesandbox/utils";
 
 const backendPort = 3000;
 const frontendPort = 5173;
-const backendUrl = `https://${getCodeSandboxHost(backendPort)}`;
-const frontendUrl = `https://${getCodeSandboxHost(frontendPort)}`;
+const backendUrl = `https://localhost:${backendPort}`;
+const frontendUrl = `https://localhost:${frontendPort}`;
 
 export const App = () => {
   return (

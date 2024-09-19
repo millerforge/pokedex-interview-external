@@ -47,8 +47,8 @@ _Pokédex_
 
 - All necessary backend + frontend libraries have been provided
 - Hot-reloading has been configured for both the frontend and the backend, but dev servers may need to be restarted manually:
-  - The frontend can be (re)started with `pnpm dev`
-  - The backend can be restarted with `pnpm dev` from the `/backend` directory
+  - The frontend can be (re)started with `npm run dev`
+  - The backend can be restarted with `npm run dev` from the `/backend` directory
 - Assume all users share the same list of Pokemon (see `backend/src/data/pokemon.ts`)
 - See `backend/src/data/users` for "in-memory database" of valid users and passwords
 - Not all pokemon types need a different badge color -- only the types that are returned from the backend
