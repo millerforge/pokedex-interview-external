@@ -1,33 +1,49 @@
+export const pokemonToFetch = [
+  'bulbasaur',
+  'charmander',
+  'squirtle',
+  'pikachu',
+  'eevee',
+  'chikorita',
+  'cyndaquil',
+  'totodile',
+  'marill',
+  'treecko',
+  'torchic',
+  'mudkip',
+  'ralts',
+];
+
 export const types = [
-  "normal",
-  "fighting",
-  "flying",
-  "poison",
-  "ground",
-  "rock",
-  "bug",
-  "ghost",
-  "steel",
-  "fire",
-  "water",
-  "grass",
-  "electric",
-  "psychic",
-  "ice",
-  "dragon",
-  "dark",
-  "fairy",
-  "stellar",
-  "unknown",
+  'normal',
+  'fighting',
+  'flying',
+  'poison',
+  'ground',
+  'rock',
+  'bug',
+  'ghost',
+  'steel',
+  'fire',
+  'water',
+  'grass',
+  'electric',
+  'psychic',
+  'ice',
+  'dragon',
+  'dark',
+  'fairy',
+  'stellar',
+  'unknown',
 ];
 
 const badgeColors = [
-  "ring-slate-400",
-  "ring-indigo-500",
-  "ring-rose-300",
-  "ring-sky-400",
-  "ring-red-400",
-  "ring-emerald-400",
+  'ring-slate-400',
+  'ring-indigo-500',
+  'ring-rose-300',
+  'ring-sky-400',
+  'ring-red-400',
+  'ring-emerald-400',
 ];
 
 /* 
@@ -38,53 +54,48 @@ https://pokeapi.co/api/v2/pokemon/treecko/
 export const treecko = {
   height: 5,
   id: 252,
-  name: "treecko",
+  name: 'treecko',
   order: 347,
   sprites: {
-    back_default:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/252.png",
+    back_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/252.png',
     back_female: null,
-    back_shiny:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/252.png",
+    back_shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/252.png',
     back_shiny_female: null,
-    front_default:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png",
+    front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png',
     front_female: null,
-    front_shiny:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/252.png",
+    front_shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/252.png',
     front_shiny_female: null,
     other: {
       dream_world: {
         front_default:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/252.svg",
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/252.svg',
         front_female: null,
       },
       home: {
-        front_default:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/252.png",
+        front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/252.png',
         front_female: null,
         front_shiny:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/252.png",
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/252.png',
         front_shiny_female: null,
       },
-      "official-artwork": {
+      'official-artwork': {
         front_default:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png",
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png',
         front_shiny:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/252.png",
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/252.png',
       },
       showdown: {
         back_default:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/252.gif",
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/252.gif',
         back_female: null,
         back_shiny:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/shiny/252.gif",
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/shiny/252.gif',
         back_shiny_female: null,
         front_default:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/252.gif",
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/252.gif',
         front_female: null,
         front_shiny:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/252.gif",
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/252.gif',
         front_shiny_female: null,
       },
     },
@@ -93,8 +104,8 @@ export const treecko = {
     {
       slot: 1,
       type: {
-        name: "grass",
-        url: "https://pokeapi.co/api/v2/type/12/",
+        name: 'grass',
+        url: 'https://pokeapi.co/api/v2/type/12/',
       },
     },
   ],

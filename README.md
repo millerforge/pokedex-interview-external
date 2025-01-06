@@ -20,17 +20,42 @@ _Pokédex_
 
 ## Frontend Tasks
 
-1. Add JWT Login Flow
-2. Display First Name + Email Address from JWT
-3. Query backend to get list of Pokemon names for displaying in Pokedex
-4. Call PokeAPI (v2) to fetch necessary data for Pokedex (Name, Height, Weight, ID, Description / Flavor Text, Type(s))
-5. Dynamically show content based on user state (if they're logged in, hide login form. If they're not logged in, hide Pokedex + Welcome banner.)
-6. Pokemon type (Fire, Water, Electric, etc.) badges in Pokédex should change color based on the type (see `src/data/pokemon.ts` for different types and colors)
+Call PokeAPI (v2) to fetch the following Pokemon Data:
+
+| Field       | Source                                                   |
+| ----------- | -------------------------------------------------------- |
+| Name        | https://pokeapi.co/api/v2/pokemon/<pokemon_name>         |
+| Height      | https://pokeapi.co/api/v2/pokemon/<pokemon_name>         |
+| Weight      | https://pokeapi.co/api/v2/pokemon/<pokemon_name>         |
+| ID          | https://pokeapi.co/api/v2/pokemon/<pokemon_name>         |
+| Types       | https://pokeapi.co/api/v2/pokemon/<pokemon_name>         |
+| Description | https://pokeapi.co/api/v2/pokemon-species/<pokemon_name> |
+
+Note: See `src/pokeApi.ts`
+
+Display `pokemonToFetch` pokemon in the Pokedex (see `src/data/pokemon.ts`)
+
+Pokemon type (Fire, Water, Electric, etc.) badges in Pokédex should change color based on the type (see src/data/pokemon.ts for different types and colors)
+
+Enable JWT Login flow
+
+- Send Username and Password to Backend
+- Backend should respond with JWT Token with `first_name` and `email` (at minimum)
+- Display `first_name` and `email` in welcome header
+- Dynamically Show / Hide contend depending on User state:
+
+| Component      | Visible Condition |
+| -------------- | ----------------- |
+| Welcome Header | Logged In         |
+| Login Form     | Not Logged In     |
+| Pokedex        | Logged In         |
+
 
 ## Backend Tasks
 
-1. Implement `/login` route
-2. Implement `/pokemon` route and only return data if user is logged-in (see `backend/src/data/pokemon.ts`)
+Implement `/login` route
+
+Implement `/pokemon` route and only return data if user is logged-in (see `backend/src/data/pokemon.ts`)
 
 ## Extras
 
