@@ -1,12 +1,11 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
-import { getCodeSandboxHost } from "@codesandbox/utils";
 
 const backendPort = 3000;
 const frontendPort = 5173;
-const backendUrl = `https://localhost:${backendPort}`;
-const frontendUrl = `https://localhost:${frontendPort}`;
+const backendUrl = `http://localhost:${backendPort}`;
+const frontendUrl = `http://localhost:${frontendPort}`;
 
 const app = express();
 
