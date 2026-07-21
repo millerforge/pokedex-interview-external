@@ -1,8 +1,60 @@
 # Full-Stack Interview: Pokédex
 
+## Quick Start
+
+This repository uses `pnpm`.
+
+### Prerequisites
+
+- Node.js `20.x` (recommended) or `>=18.12`
+- `pnpm` (installed via Corepack)
+
+```bash
+# if needed
+nvm install 20
+nvm use 20
+
+# enable pnpm
+corepack enable
+corepack prepare pnpm@latest --activate
+```
+
+### Install Dependencies
+
+Install dependencies in both projects:
+
+```bash
+# from repo root
+pnpm install
+
+# install backend dependencies
+cd backend
+pnpm install
+```
+
+### Run The App
+
+Use two terminals.
+
+Terminal 1 (frontend):
+
+```bash
+cd /path/to/pokedex-interview-external
+pnpm run dev
+```
+
+Terminal 2 (backend):
+
+```bash
+cd /path/to/pokedex-interview-external/backend
+pnpm run dev
+```
+
+# Interview Instructions
+
 You are tasked with building a React App that displays pokemon data (A Pokédex) for a logged-in Trainer. Both a backend and frontend are already running. One React component / template with static content has been provided.
 
-# Terminology
+## Terminology
 
 _Candidate_
 
@@ -16,11 +68,9 @@ _Pokédex_
 
 - The frontend list of Pokemon that you are building for this challenge
 
-# Acceptance Criteria
-
 ## Steps
 
-### Pokemon 
+### 1. Pokemon
 
 - Send pokemon list (`src/data/pokemon.ts`) from backend to frontend
 - Display Pokemon list in the frontend
@@ -40,7 +90,7 @@ Note: The description should be the first `flavor_text` in `flavor_text_entries`
 
 - Pokemon type (Fire, Water, Electric, etc.) badges in Pokédex should change color based on the type (see src/data/pokemon.ts for different types and colors)
 
-### Login 
+### 2. Login
 
 - Implement `/login` route in the backend
 - Enable JWT Login flow
@@ -54,7 +104,6 @@ Note: The description should be the first `flavor_text` in `flavor_text_entries`
 | Welcome Header | Logged In         |
 | Login Form     | Not Logged In     |
 | Pokedex        | Logged In         |
-
 
 ## Extras
 
@@ -71,8 +120,8 @@ Note: The description should be the first `flavor_text` in `flavor_text_entries`
 
 - All necessary backend + frontend libraries have been provided
 - Hot-reloading has been configured for both the frontend and the backend, but dev servers may need to be restarted manually:
-  - The frontend can be (re)started with `npm run dev`
-  - The backend can be restarted with `npm run dev` from the `/backend` directory
+  - The frontend can be (re)started with `pnpm run dev`
+  - The backend can be restarted with `pnpm run dev` from the `/backend` directory
 - Assume all users share the same list of Pokemon (see `backend/src/data/pokemon.ts`)
 - See `backend/src/data/users` for "in-memory database" of valid users and passwords
 - Not all pokemon types need a different badge color -- only the types that are returned from the backend
